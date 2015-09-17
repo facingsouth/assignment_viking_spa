@@ -10,13 +10,15 @@ clothingStore.factory('shoppingCartService',[
 
     obj.addItem = function(productID, quantity){
       if ( _cart[productID] ){
-        _cart[productID] += parseInt(quantity);
-        console.log(_cart);
+        _cart[productID] += ~~quantity;
       } else {
-        _cart[productID] = parseInt(quantity);
-        console.log(_cart);
+        _cart[productID] = ~~quantity;
       }
     };
+
+    obj.updateItem = function(productID, quantity) {
+      _cart[productID] = ~~quantity;
+    }
 
     obj.removeItem = function(productID){
       if ( _cart[productID] ) {

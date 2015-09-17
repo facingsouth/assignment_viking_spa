@@ -8,12 +8,18 @@
   padding: 0px;
 }
 
-#cover-image h1 {
+#wrapper {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+}
+
+#cover-image #wrapper h1 {
   font-size: 5em;
   color: white;
-  position: absolute;
-  bottom: 40px;
-  left: 33%;
+  position: relative;
+  left: -50%;
 }
 
 #cover-text {

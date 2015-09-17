@@ -39,6 +39,10 @@ clothingStore.controller('MainCtrl', ['$scope',
     shoppingCartService.addItem(productID, quantity);
   };
 
+  $scope.updateCart = function(productID, quantity){
+    shoppingCartService.updateItem(productID, quantity);
+  };
+
   $scope.removeFromCart = function(productID){
     shoppingCartService.removeItem(productID);
   };

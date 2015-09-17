@@ -5,7 +5,7 @@
       <div class='col-sm-2 col-sm-offset-9'>
         <label name='categoryFilter'>Filter by Category</label>
         <select name='categoryFilter' ng-model="categoryFilter">
-          <option>None</option>
+          <option value="" selected>None</option>
           <option ng-repeat="c in categories()" value="{{c.id}}">{{c.name}}</option>
         </select>
       </div>
