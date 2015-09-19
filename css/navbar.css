@@ -12,7 +12,7 @@
   width: 100%;
   position: absolute;
   left: 50%;
-  bottom: 10%;
+  bottom: 5%;
 }
 
 #cover-image #wrapper h1 {
@@ -39,6 +39,17 @@
 #cover-headline {
   border: 1px solid gray;
   font-style: italic;
+}
+
+#product-list {
+  margin-bottom: 20px;
+}
+
+.price-tag {
+  font-size: 1.5em;
+  position: absolute;
+  top: 75px;
+  right: 10%;
 }
 
 body{

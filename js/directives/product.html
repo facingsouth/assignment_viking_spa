@@ -2,6 +2,7 @@
 <p>{{product.category["name"]}}</p>
 <a ui-sref="products.show({productID: product.id})" class="thumbnail">
   <img ng-src="{{product.imageUrl}}">
+  <span class="price-tag">{{product.price | currency}}</span>
 </a>
 
 

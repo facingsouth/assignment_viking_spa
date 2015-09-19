@@ -2,7 +2,7 @@ var clothingStore = angular.module('clothingStore', ['ui.router']);
 
 clothingStore.config(function($stateProvider, $urlRouterProvider){
 
-  $urlRouterProvider.otherwise('/products');
+  $urlRouterProvider.otherwise('/products/index');
 
 
   // Products
@@ -10,24 +10,18 @@ clothingStore.config(function($stateProvider, $urlRouterProvider){
     url: '/products',
     templateUrl: '/js/partials/test.html',
     controller: 'MainCtrl'
-  });
-
-  // Products index
-  $stateProvider.state('products.index',{
+  })
+  .state('products.index',{
       url: '/index',
       templateUrl: 'js/partials/index.html',
       // controller: 'MainCtrl'
-    });
-
-  // Product show
-  $stateProvider.state('products.show',{
+    })
+  .state('products.show',{
       url: '/show/:productID',
       templateUrl: 'js/partials/show.html',
       controller: 'MainCtrl'
-    });
-
-  // Cart show
-  $stateProvider.state('products.cart',{
+    })
+  .state('products.cart',{
       url: '/cart',
       templateUrl: 'js/partials/cart.html',
       // controller: 'MainCtrl'

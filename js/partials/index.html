@@ -13,7 +13,7 @@
   </div>
 
   <div class="panel-body">
-    <div class="col-xs-6 col-md-4 text-center" ng-repeat="p in products() | filter: { category: findCategory(categoryFilter) } ">
+    <div class="col-xs-6 col-md-4 text-center" id="product-list" ng-repeat="p in products() | filter: { category: findCategory(categoryFilter) } ">
       <product-directive product="p"></product-directive>
       <button class="btn btn-lg btn-primary"
               ng-click='addToCart(p.id, 1)'>
